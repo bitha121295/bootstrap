@@ -2,7 +2,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="description" content="{{ if isset .Params "description" }}{{ .Site.Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
 <meta name="author" content="{{ .Site.Params.authors }}">
-<meta name="generator" content="{{ .Hugo.Generator }}">
+{{ .Hugo.Generator }}
 
 <title>{{ if .IsHome }}{{ .Site.Title }} · {{ .Site.Params.description }}{{ else }}{{ .Title }} · {{ .Site.Title }}{{ end }}</title>
 
